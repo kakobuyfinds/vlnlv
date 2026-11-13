@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#202643">
+<title>CNShopper spreadsheet po polsku – buty, odzież i zdjęcia QC</title>
+<meta name="description" content="CNShopper spreadsheet po polsku: przejdź do kategorii CAFANS i sprawdź, jak porównać rozmiary, czytać zdjęcia QC oraz oszacować koszt dostawy do Polski.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="CNShopper spreadsheet po polsku – buty, odzież i zdjęcia QC">
+<meta property="og:description" content="Kategorie CAFANS, praktyczna lista kontroli zdjęć i poradnik szacowania kosztu w złotych.">
+<meta property="og:image" content="https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/058/631/237/original/787909_01.jpg.jpeg?action=crop&amp;width=800">
+<meta property="og:image:alt" content="Biały Nike Air Force 1 First Use z czarnym obrysem logo">
+<!--
+Przegląd 10 domen z wyników wyszukiwania, bez potwierdzonej kolejności pierwszej strony Google:
+cnshopperpicklist.com i cnshopperlists.com — kategorie, linki do produktów, zdjęcia QC;
+cnshopperwithqc.com i cnshopperspreadsheet.net — katalog i przeglądanie według kategorii;
+spreadsheet-cnshopper.com i cnshopperspreadsheet.com — poradniki, zamawianie, wysyłka;
+findhaul.com i cnshopper-spreadsheet.com — porządkowanie znalezisk i linki źródłowe;
+qcradar.com i cnshopper.co.uk — koszty i weryfikacja linków.
+Frazy dodatkowe: CNShopper spreadsheet po polsku; CNShopper finds; zdjęcia QC CNShopper;
+katalog produktów CNShopper; wysyłka CNShopper do Polski.
+Dłuższe zapytania do poradników: jak czytać CNShopper spreadsheet; linki do produktów w arkuszu CNShopper;
+jak sprawdzić link do oferty; jak porównać warianty produktu; buty sportowe w katalogu CAFANS;
+jak zmierzyć stopę do sneakersów; jak porównać rozmiar EU z centymetrami; długość wkładki a długość stopy;
+jak zmierzyć bluzę na płasko; jak dobrać rozmiar T-shirtu; jak zmierzyć obwód głowy do czapki;
+jak dobrać długość bransoletki; zdjęcia QC butów przed zakupem; jak sprawdzić metkę ze zdjęcia;
+jak ocenić szwy kurtki na zdjęciu; zdjęcie produktu z miarką; zdjęcia QC a autentyczność produktu;
+jak policzyć koszt przesyłki do Polski; jak przeliczyć koszt zakupu na PLN; waga gabarytowa paczki;
+jak sprawdzić warunki zwrotu; jak porównać koszt całego zamówienia; opłaty importowe przy zakupach z Chin;
+jak sprawdzić wymiary jedwabnej apaszki.
+-->
+<style>
+:root{color-scheme:light;--ink:#202643;--muted:#515774;--paper:#fbf8f2;--line:#d7d9e8;--wash:#eae9fa;--accent:#f8cd73}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid #9b4508;outline-offset:4px}
+.mast{background:var(--ink);color:#fff}
+.mast .wrap{min-height:3.6rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-weight:850;letter-spacing:.13em;text-decoration:none}
+.mast span{font-size:.88rem;color:#ecebff;text-align:right}
+nav{padding-block:1.15rem;border-bottom:1px solid var(--line)}
+nav h2{font-size:.95rem;margin:0 0 .55rem}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr));gap:.45rem;list-style:none;padding:0;margin:0}
+.categories a{display:flex;align-items:center;min-height:2.75rem;padding:.45rem .65rem;background:#fff;border:1px solid var(--line);border-radius:.55rem;text-decoration:none;font-size:.9rem;font-weight:650}
+.categories a:hover{background:var(--wash)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;margin-block:1.5rem 2.8rem;border-radius:1.2rem;overflow:hidden;background:var(--wash)}
+.hero-copy{align-self:center;padding:clamp(1.3rem,4vw,3.5rem)}
+h1,h2,h3{line-height:1.14;text-wrap:balance}
+h1{font-size:clamp(2.2rem,5.8vw,4.8rem);letter-spacing:-.058em;margin:0 0 1rem;overflow-wrap:anywhere}
+h2{font-size:clamp(1.5rem,3.7vw,2.35rem);letter-spacing:-.03em;margin:0 0 .8rem}
+h3{font-size:1.22rem;margin:0 0 .55rem}
+p{margin:.6rem 0 1rem}
+.button{display:inline-block;background:var(--accent);color:var(--ink);border-radius:.5rem;padding:.7rem 1rem;text-decoration:none;font-weight:780}
+.button:hover{background:#ffda8e}
+figure{margin:0;background:#fff}
+figure img{width:100%;height:auto;aspect-ratio:1;display:block;object-fit:contain}
+.hero figure{align-self:stretch;display:grid;grid-template-rows:1fr auto}
+.hero img{align-self:center}
+figcaption{padding:.55rem .85rem;font-size:.83rem;color:var(--muted)}
+section{margin-bottom:2.7rem}
+.intro{max-width:72ch;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid>*{border:1px solid var(--line);border-radius:.85rem;overflow:hidden}
+article{background:#fff;padding:1.15rem}
+article p:last-child,article ol:last-child{margin-bottom:0}
+ol{padding-left:1.4rem}
+li+li{margin-top:.3rem}
+.categories li{margin:0}
+.faq{max-width:52rem}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:.85rem .1rem;font-weight:750}
+details p{margin:0 0 .9rem}
+footer{border-top:1px solid var(--line);padding:1rem 0 1.5rem;color:var(--muted);font-size:.9rem}
+@media(max-width:48rem){.hero{grid-template-columns:1fr}.hero img{max-height:21rem}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:33rem){.guides{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"pl",
+  "name":"Pytania o CNShopper spreadsheet",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Co to jest CNShopper spreadsheet?",
+      "acceptedAnswer":{"@type":"Answer","text":"To określenie arkusza z linkami do produktów, zwykle uporządkowanymi według kategorii. Na tej stronie znajdziesz polski poradnik i odnośniki do katalogu CAFANS."}
+    },
+    {
+      "@type":"Question",
+      "name":"Czy zdjęcia QC potwierdzają autentyczność produktu?",
+      "acceptedAnswer":{"@type":"Answer","text":"Zdjęcia QC pomagają ocenić widoczny stan i zgodność wariantu z opisem. Autentyczność wymaga oddzielnej weryfikacji, na przykład dokumentu zakupu lub oceny specjalisty."}
+    },
+    {
+      "@type":"Question",
+      "name":"Jak oszacować koszt przesyłki do Polski?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sprawdź wagę i wymiary paczki, zasady naliczania opłaty dla wybranej usługi oraz kurs płatności. Przed zakupem uwzględnij ewentualne opłaty importowe i obsługę przewoźnika."}
+    },
+    {
+      "@type":"Question",
+      "name":"Dokąd prowadzą przyciski kategorii?",
+      "acceptedAnswer":{"@type":"Answer","text":"Przyciski kategorii otwierają odpowiednie działy CAFANS. Zdjęcia marek na stronie mają charakter ilustracyjny."}
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/vlnlv/">
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="https://www.cafans.com">CAFANS</a>
+    <span>Poradnik zakupowy po polsku</span>
+  </div>
+</header>
+<main class="wrap">
+  <nav aria-labelledby="categories">
+    <h2 id="categories">Kategorie CAFANS</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Buty</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirty</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Kurtki</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Nakrycia głowy</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Komplety</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Koszulki sportowe</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Akcesoria</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" aria-labelledby="title">
+    <div class="hero-copy">
+      <h1 id="title">CNShopper spreadsheet</h1>
+      <p>Szukasz konkretnego fasonu lub chcesz porównać kilka ofert? Wybierz kategorię CAFANS, a przed zakupem sprawdź tabelę rozmiarów, zdjęcia kontroli jakości (QC) i całkowity koszt dostawy do Polski.</p>
+      <a class="button" href="https://www.cafans.com">Otwórz katalog CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/058/631/237/original/787909_01.jpg.jpeg?action=crop&amp;width=800" width="800" height="800" fetchpriority="high" alt="Biały Nike Air Force 1 First Use z czarnym obrysem logo">
+      <figcaption>Nike Air Force 1 First Use · zdjęcie poglądowe</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="guides">
+    <h2 id="guides">Co sprawdzić przed zamówieniem</h2>
+    <p class="intro">W zestawieniach typu CNShopper finds zacznij od modelu, koloru i rozmiaru. Zachowaj link do oferty oraz datę sprawdzenia, aby po otwarciu katalogu łatwo wrócić do tego samego wariantu.</p>
+    <div class="grid guides">
+      <article>
+        <h3>Jak porównać rozmiary butów i odzieży</h3>
+        <ol>
+          <li><strong>Buty.</strong> Zmierz obie stopy na stojąco i porównaj dłuższy wynik z tabelą konkretnej oferty. Odczytując rozmiar EU, sprawdź, czy wymiar w centymetrach oznacza długość stopy czy wkładki.</li>
+          <li><strong>Odzież.</strong> Zmierz na płasko ulubioną bluzę lub T-shirt. Porównaj szerokość pod pachami, długość rękawa i długość całkowitą z wymiarami podanymi dla wybranego fasonu.</li>
+          <li><strong>Czapki i biżuteria.</strong> Porównaj obwód głowy z zakresem regulacji czapki, a obwód nadgarstka z długością użytkową bransoletki.</li>
+        </ol>
+      </article>
+      <article>
+        <h3>Jak czytać zdjęcia QC CNShopper</h3>
+        <p>Sprawdź, czy zdjęcia przedstawiają zamówiony kolor, rozmiar i wariant. Przy butach poproś o ujęcia podeszwy, pięty i metki z rozmiarem. Przy kurtce przydadzą się zbliżenia zamka, szwów i podszewki.</p>
+        <p>Gdy wymiary są niejasne, poproś o zdjęcie z miarką ułożoną płasko przy produkcie. Do oceny koloru wybierz ujęcie w neutralnym świetle.</p>
+      </article>
+      <article>
+        <h3>Jak policzyć koszt dostawy do Polski</h3>
+        <p>Zapisz cenę produktu, koszt wysyłki krajowej, ewentualną opłatę za obsługę i koszt przesyłki międzynarodowej. Do porównania ofert przelicz kwoty na PLN według kursu wybranej metody płatności.</p>
+        <p>Przy większym kartonie sprawdź, czy usługa stosuje wagę gabarytową. Przed płatnością potwierdź warunki zwrotu, koszty importowe i zasady obsługi przesyłki u przewoźnika.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="details">
+    <h2 id="details">Odzież i dodatki z bliska</h2>
+    <div class="grid gallery">
+      <figure>
+        <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-embossed-monogram-zip-up-jacket--FUVI01387900_PM1_Worn%20view.png?hei=480&amp;wid=480&amp;fmt=webp" width="480" height="480" loading="lazy" decoding="async" alt="Kurtka Louis Vuitton z tłoczonym monogramem na modelu">
+        <figcaption>Louis Vuitton · kurtka z tłoczonym monogramem</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/White_South_0_40_632x790/1571154303/576253_4HG53_1060_009_100_0000_Light.jpg" width="632" height="790" loading="lazy" decoding="async" alt="Model w czapce Gucci z daszkiem i kurtce w kwiatowy wzór">
+        <figcaption>Gucci · czapka z daszkiem</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn.theluxurycloset.com/uploads/products/full/luxury-women-dior-used-accessories-p748744-002.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Bransoletka Dior Clair D Lune w złotym kolorze z kryształkami">
+        <figcaption>Dior · bransoletka Clair D Lune</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i0.wp.com/carredeparis.me/wp-content/uploads/2024/02/BridesdeGalaHermesScarfbyCarredeParis_2of7_1200x.webp?ssl=1&amp;w=480" width="480" height="480" loading="lazy" decoding="async" alt="Jedwabna apaszka Hermès Brides de Gala z motywem uprzęży">
+        <figcaption>Hermès · apaszka Brides de Gala</figcaption>
+      </figure>
+    </div>
+    <p class="intro">Zdjęcia są poglądowe. Przy porównywaniu torebek, pasków lub jedwabnych apaszek Hermès sprawdź wymiary, wykończenie i informacje o pochodzeniu w konkretnej ofercie.</p>
+  </section>
+
+  <section class="faq" aria-labelledby="faq">
+    <h2 id="faq">Pytania o CNShopper spreadsheet</h2>
+    <details open>
+      <summary>Co to jest CNShopper spreadsheet?</summary>
+      <p>To określenie arkusza z linkami do produktów, zwykle uporządkowanymi według kategorii. Na tej stronie znajdziesz polski poradnik i odnośniki do katalogu CAFANS.</p>
+    </details>
+    <details>
+      <summary>Czy zdjęcia QC potwierdzają autentyczność produktu?</summary>
+      <p>Zdjęcia QC pomagają ocenić widoczny stan i zgodność wariantu z opisem. Autentyczność wymaga oddzielnej weryfikacji, na przykład dokumentu zakupu lub oceny specjalisty.</p>
+    </details>
+    <details>
+      <summary>Jak oszacować koszt przesyłki do Polski?</summary>
+      <p>Sprawdź wagę i wymiary paczki, zasady naliczania opłaty dla wybranej usługi oraz kurs płatności. Przed zakupem uwzględnij ewentualne opłaty importowe i obsługę przewoźnika.</p>
+    </details>
+    <details>
+      <summary>Dokąd prowadzą przyciski kategorii?</summary>
+      <p>Przyciski kategorii otwierają odpowiednie działy CAFANS. Zdjęcia marek na stronie mają charakter ilustracyjny.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><a href="https://www.cafans.com">CAFANS</a> · Niezależny poradnik dla czytelników z Polski</div>
+</footer>
+</body>
+</html>
